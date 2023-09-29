@@ -24,7 +24,9 @@ namespace InMemoryCaching.Controllers
         [HttpGet("[action]")]
         public string Get()
         {
-            return _memoryCache?.Get<string>("name");
+            if (_memoryCache.TryGetValue<string>("name", out string name))
+                return name.Substring(3);
+            return "";
         }
     }
 }
