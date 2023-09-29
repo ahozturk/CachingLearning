@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace InMemoryCaching.Controllers
 {
@@ -7,17 +8,23 @@ namespace InMemoryCaching.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        readonly IMemoryCache _memoryCache;
+
+        public ValuesController(IMemoryCache memoryCache)
+        {
+            _memoryCache = memoryCache;
+        }
 
         [HttpGet("[action]/{name}")]
         public void Set(string name)
         {
-            throw new NotImplementedException();
+            _memoryCache.Set("name", name);
         }
 
         [HttpGet("[action]")]
         public string Get()
         {
-            throw new NotImplementedException();
+            return _memoryCache?.Get<string>("name");
         }
     }
 }
