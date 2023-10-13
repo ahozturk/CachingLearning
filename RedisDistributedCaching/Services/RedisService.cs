@@ -16,6 +16,7 @@ namespace RedisDistributedCaching.Services
             CommandMap = CommandMap.Sentinel,
             AbortOnConnectFail = false
         };
+
         static ConfigurationOptions masterOptions => new()
         {
             AbortOnConnectFail = false
