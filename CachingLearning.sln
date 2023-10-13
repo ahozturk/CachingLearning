@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemoryCaching", "InMemory
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedCaching", "DistributedCaching\DistributedCaching.csproj", "{1239C872-B033-4D05-A412-18FD51F503C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.PubSubExample.Subscriber", "Redis.PubSubExample.Subscriber\Redis.PubSubExample.Subscriber.csproj", "{B19D2A08-043B-4924-810A-0E2BF4C480EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis.PubSubExample.Subscriber", "Redis.PubSubExample.Subscriber\Redis.PubSubExample.Subscriber.csproj", "{B19D2A08-043B-4924-810A-0E2BF4C480EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.PubSubExample.Publisher", "Redis.PubSubExample.Publisher\Redis.PubSubExample.Publisher.csproj", "{C220E3D4-7F3E-4232-AEBC-6B5B104133E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redis.PubSubExample.Publisher", "Redis.PubSubExample.Publisher\Redis.PubSubExample.Publisher.csproj", "{C220E3D4-7F3E-4232-AEBC-6B5B104133E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisDistributedCaching", "RedisDistributedCaching\RedisDistributedCaching.csproj", "{43ABD899-CAF0-4DB3-8881-568B07031BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C220E3D4-7F3E-4232-AEBC-6B5B104133E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C220E3D4-7F3E-4232-AEBC-6B5B104133E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C220E3D4-7F3E-4232-AEBC-6B5B104133E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43ABD899-CAF0-4DB3-8881-568B07031BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ABD899-CAF0-4DB3-8881-568B07031BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ABD899-CAF0-4DB3-8881-568B07031BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ABD899-CAF0-4DB3-8881-568B07031BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
